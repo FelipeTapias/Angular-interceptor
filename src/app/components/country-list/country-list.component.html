@@ -1,0 +1,19 @@
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Capital</th>
+      <th scope="col">Region</th>
+      <th scope="col">Currency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let country of countries">
+      <td>{{ country.name }}</td>
+      <td>{{ country.capital }}</td>
+      <td>{{ country.region }}</td>
+      <td>{{ country.currencies[0].name }}</td>
+    </tr>
+  </tbody>
+</table>
